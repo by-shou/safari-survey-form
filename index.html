@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Safari Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Safari Survey Form</h1>
+      <p id="description">Because we care about our customers, let us know what you think about our services...</p>
+    </header>
+
+    <form id="survey-form">
+      <div id="name-div">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" type="text" placeholder="Type your name..." required />
+      </div>
+
+      <div id="email-div">
+        <label id="email-label" for="email">Email</label>
+        <input id="email" type="email" placeholder="Type your email..." required />
+      </div>
+
+      <div id="dropdown-div">
+        <label for="dropdown">Safari Plan
+          <select id="dropdown">
+            <option disabled selected value>Select the Safari Plan you paid...</option>
+            <option>Safari Journey</option>
+            <option>Safari Master</option>
+          </select>
+        </label>
+      </div>
+
+      <div id="checkboxes-div">Select the activities you participated in:
+        <div id="checkboxes-inside-div">
+          <label id="checkbox-label" for="checkbox1"><input id="checkbox1" name="checks" type="checkbox" value="checkbox1" />Sunset Wildlife Viewing Safari</label>
+          <label id="checkbox-label" for="checkbox2"><input id="checkbox2" name="checks" type="checkbox" value="checkbox2" /> Guided Bush Walk Adventure</label>
+          <label id="checkbox-label" for="checkbox3"><input id="checkbox3" name="checks" type="checkbox" value="checkbox3" /> Big Five Game Drive Experience</label>
+        </div>
+      </div>
+
+      <div id="number-div">
+        <label id="number-label" for="number">Service Rating</label>
+        <input id="number" type="number" min="1" max="10" placeholder="Rate our service from 1 to 10..." />
+      </div>
+
+      <div id="radios-div">
+        <p>Would you buy this service again?</p>
+        <div id="radios-inside-div">
+          <label id="radio1-label" for="radio1"><input id="radio1" type="radio" name="comeback" value="yes" checked />Yes, I would!</label>
+          <label id="radio2-label" for="radio2"><input id="radio2" type="radio" name="comeback" value="no" />Erm... Nope.</label>
+        </div>
+      </div>
+
+      <div id="textarea-div">Tell us what you liked and disliked...
+        <label id="textarea-label" for="txtar">
+          <textarea id="txtar" placeholder="I think the service can inprove on these areas..." required></textarea>
+        </label>
+      </div>
+
+      <p id="thanks">Thank you!</p>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

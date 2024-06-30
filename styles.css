@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  justify-content: center;
+  font-family: garamond;
+  color: #FFF0A1;
+  background-image: url('https://images.pexels.com/photos/2317536/pexels-photo-2317536.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+header, form {
+  width: 80%;
+  margin: 1rem auto;
+  padding: 0 1rem;
+  display: grid;
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: #694A00cc
+}
+
+h1 {
+  margin: 1rem auto;
+  padding: 0;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+header p {
+  margin: 0.3rem auto 1rem auto;
+  padding: 0;
+  font-size: 1.2rem;
+  font-style: italic;
+  text-shadow: 1px 1px 1px black;
+}
+
+form {
+  padding: 1.2rem 1rem;
+  display: grid;
+  place-items: left;
+  text-align: left;
+}
+
+form div {
+  display: grid;
+  text-align: left;
+  padding: 0.6rem;
+}
+
+#name-div, #email-div, #number-div, #dropdown-div, #radios-div, #checkboxes-div, #textarea-div, #thanks {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+#name, #email, #number, #dropdown, #radios-inside-div, #checkboxes-inside-div, textarea {
+  margin: 0.5rem 0;
+  padding: 0.4rem;
+  background-color: #3A2700;
+  font-family: garamond;
+  font-size: 1rem;
+  color: #EEDE91;
+  border: 0;
+  border-radius: 5px;
+}
+
+input::placeholder, option[disabled], textarea::placeholder {
+  color: #CABD7D;
+  font-style: italic;
+}
+
+
+select, textarea {
+  width: 100%;
+}
+
+#radios-div label, #checkboxes-div label {
+  margin: 0;
+  padding: 0.4rem 0;
+  display: flex;
+  align-items: center;
+  text-shadow: none;
+}
+#radios-div p {
+  margin: 0;
+  padding: 0;
+}
+
+#checkboxes-div label {
+  font-style: italic;
+}
+
+#radios-div input {
+  margin-right: 0.4rem;
+}
+
+textarea {
+  min-height: 5rem;
+  resize: vertical;
+}
+
+#thanks {
+  margin: 1.2rem auto;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+input[type="submit"] {
+  width: 15%;
+  height: 2rem;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #3A2700;
+  font-family: inherit;
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #EEDE91;
+  text-shadow: 0.5px 0.5px 1px #FFE354;
+  border: solid 1px #FFF0A1;
+  border-radius: 5px;
+}
